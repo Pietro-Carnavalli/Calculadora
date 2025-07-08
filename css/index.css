@@ -1,28 +1,33 @@
-*{
-   background-color: #5f9ea0;
+
+* {
+
    box-sizing: border-box;
 }
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #4e00c2, #00c2ff);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
- h1{
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   background: linear-gradient(to bottom right, #4e00c2, #00c2ff);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+h1 {
    background-color: white;
- }
+}
 
 .btn {
    margin-left: 15%;
 }
+
 .calculator h1 {
-      margin-bottom: 5px;
-    }
+   margin-bottom: 5px;
+
+}
+
 .buttons {
 
    width: 100%;
@@ -30,55 +35,81 @@
    grid-template-columns: repeat(4, 1fr);
    gap: 10px;
    background-color: white;
-   
+
+
 }
+
 .underline {
-      width: 50px;
-      height: 4px;
-      background: #a259ff;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-.calculator{
+   width: 50px;
+   height: 4px;
+   background: #a259ff;
+   border-radius: 10px;
+   margin-bottom: 20px;
+}
+
+.calculator {
    background-color: white;
    text-align: center;
    position: absolute;
-   width: 300px;
+   width: 350px;
    height: 70%;
    border-radius: 20px;
    display: flex;
    flex-direction: column;
    align-items: center;
+  
 }
 
-.display{
+.display {
    background-color: #0e0e23;
    width: 100%;
-   height: 60px;
-   color: white; 
+   height: 100px;
+   color: white;
    border-radius: 15px;
    text-align: right;
    padding: 15px;
    font-size: 24px;
-   margin-bottom: 20px
+   margin-bottom: 40px
 }
 
 button {
-      padding: 20px;
-      font-size: 18px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.2s;
-    }
+   padding: 20px;
+   font-size: 18px;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.2s;
+   
+}
 
-    .footer{
-      margin-top: 20%;
-      font-size: 14px;
-      color: gray;
-      background-color: white;
-    }
+.footer {
+   margin-top: 20%;
+   font-size: 14px;
+   color: gray;
+   background-color: white;
+}
 
-.btn-number{
- background-color: gray;
+.btn-number {
+   background-color: #DCDCDC;
+}
+
+.btn-operator {
+   background-color: aqua;
+}
+
+.btn-equal {
+   background-color:greenyellow;
+   grid-row: span 2;
+}
+
+.btn-clear {
+   background-color: red;
+}
+
+.btn-delete{
+   background-color: orange;
+}
+
+.footer{
+   margin-bottom: 15%;
 }

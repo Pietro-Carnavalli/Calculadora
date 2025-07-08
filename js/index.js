@@ -1,12 +1,10 @@
-function somar(){
-    const number1= Number(document.getElementById("number1").value);
-    const number2= Number(document.getElementById("number2").value);
+function calc(){
+    let number = document.querySelector('btn-number').value;
+    let operator = document.querySelector('btn-operator').value;
+    let equal = document.querySelector('btn-equal');
+    let deletebtn = document.querySelector('btn-delete');
+    let clear = document.querySelector('btn-clear');
 
-    if(isNaN(number1) || isNaN(number2))
-        alert('Por favor, insira números !');
-     
-    else {
-        const resultado = number1 + number2;
-        document.getElementById("response").value = resultado;
-    }
+    let result = document.getElementById('display');
+
 }
