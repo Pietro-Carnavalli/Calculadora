@@ -11,7 +11,7 @@ function inserir(valor) {
 function calcular() {
     const displey = document.getElementById('display');
     try {
-        const resultado = eval(displey.value);
+        const resultado = eval(displey.innerText);
         displey.innerText = resultado;
     } catch {
         displey.innerText = 'Error';
