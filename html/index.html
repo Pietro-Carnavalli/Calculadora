@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<link rel="stylesheet" href="/css/index.css">
-<script src="/js/index.js"> </script>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soma de dois numeros</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soma de dois numeros</title>
+  <link rel="stylesheet" href="/css/index.css" />
+  <script defer src="/js/index.js"></script>
 </head>
 
 <body>
-
-    <div class="calculator">
+  <div class="calculator">
     <h1>Calculadora</h1>
     <div class="underline"></div>
     <div class="display" id="display">0</div>
+
     <div class="buttons">
-      <button class="btn-clear">C</button>
-      <button class="btn-delete">⌫</button>
-      <button class="btn-operator">÷</button>
-      <button class="btn-operator">×</button>
+      <button class="btn-clear" onclick="limpar()">C</button>
+      <button class="btn-delete" onclick="apagar()">⌫</button>
+      <button class="btn-operator" onclick="inserir('/')">÷</button>
+      <button class="btn-operator" onclick="inserir('*')">×</button>
 
-      <button class="btn-number">7</button>
-      <button class="btn-number">8</button>
-      <button class="btn-number">9</button>
-      <button class="btn-operator">−</button>
+      <button class="btn-number" onclick="inserir('7')">7</button>
+      <button class="btn-number" onclick="inserir('8')">8</button>
+      <button class="btn-number" onclick="inserir('9')">9</button>
+      <button class="btn-operator" onclick="inserir('-')">−</button>
 
-      <button class="btn-number">4</button>
-      <button class="btn-number">5</button>
-      <button class="btn-number">6</button>
-      <button class="btn-operator">+</button>
+      <button class="btn-number" onclick="inserir('4')">4</button>
+      <button class="btn-number" onclick="inserir('5')">5</button>
+      <button class="btn-number" onclick="inserir('6')">6</button>
+      <button class="btn-operator" onclick="inserir('+')">+</button>
 
-      <button class="btn-number">1</button>
-      <button class="btn-number">2</button>
-      <button class="btn-number">3</button>
-      <button class="btn-equal">=</button>
+      <button class="btn-number" onclick="inserir('1')">1</button>
+      <button class="btn-number" onclick="inserir('2')">2</button>
+      <button class="btn-number" onclick="inserir('3')">3</button>
+      <button class="btn-equal" onclick="calcular()">=</button>
 
-      <button class="btn-number" style="grid-column: span 2;">0</button>
-      <button class="btn-number">.</button>
+      <button class="btn-number" style="grid-column: span 2;" onclick="inserir('0')">0</button>
+      <button class="btn-number" onclick="inserir('.')">.</button>
     </div>
+
     <div class="footer">Calculadora Funcional</div>
   </div>
-
 </body>
-
 </html>
