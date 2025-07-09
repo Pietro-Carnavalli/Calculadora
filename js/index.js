@@ -1,20 +1,20 @@
 
 function inserir(valor) {
     const display = document.getElementById('display');
-    if (display.innerText === '0' || displey.innerText === 'Error') {
+    if (display.innerText === '0' || display.innerText === 'Error') {
         display.innerText = valor;
     } else {
-        display.innerText+= valor;
+        display.innerText += valor;
     }
 }
 
 function calcular() {
-    const displey = document.getElementById('display');
+    const display = document.getElementById('display');
     try {
-        const resultado = eval(displey.innerText);
-        displey.innerText = resultado;
+        const resultado = eval(display.innerText);
+        display.innerText = resultado;
     } catch {
-        displey.innerText = 'Error';
+        display.innerText = 'Error';
     }
 }
 
@@ -23,10 +23,10 @@ function limpar() {
 }
 
 function apagar() {
-    const displey = document.getElementById('display');
-    if (displey.value.length > 1) {
-        displey.innerText = displey.value.slice(0, -1);
+    const display = document.getElementById('display');
+    if (display.innerText.length > 1) {
+        display.innerText = display.innerText.slice(0, -1);
     } else {
-        displey.innerText= '0';
+        display.innerText = '0';
     }
 }
