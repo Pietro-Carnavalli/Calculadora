@@ -11,12 +11,13 @@ function inserir(valor) {
 function calcular() {
     const display = document.getElementById('display');
     try {
-        const resultado = eval(display.innerText);
+        const resultado = math.evaluate(display.innerText);
         display.innerText = resultado;
     } catch {
         display.innerText = 'Error';
     }
 }
+
 
 function limpar() {
     document.getElementById("display").innerText = "0";
