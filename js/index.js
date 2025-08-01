@@ -31,3 +31,7 @@ function apagar() {
         display.innerText = '0';
     }
 }
+
+function mode () {
+    console.log('foi')
+}
