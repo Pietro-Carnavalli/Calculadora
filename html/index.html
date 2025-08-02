@@ -6,21 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soma de dois numeros</title>
   <link rel="stylesheet" href="/css/index.css" />
-  <script defer src="/js/index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjs@11/lib/browser/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjs@11/lib/browser/math.js" defer ></script>
 </head>
 
 
-<body>
+<body id="body">
   <header>
-    <button onclick="mode()" id='mode'>
+    <button onclick="toggleDark()" id='toggle'>
       <span>☀️</span>
       <span>🌙</span>
     </button>
   </header>
 
   <div class="calculator">
-    <h1>Calculadora</h1>
+    <h1 id="title">Calculadora</h1>
     <div class="underline"></div>
     <div class="display" id="display">0</div>
 
@@ -51,6 +50,7 @@
 
     <div class="footer">Calculadora Funcional</div>
   </div>
+  <script defer src="/js/index.js"></script>
 </body>
 
 </html>

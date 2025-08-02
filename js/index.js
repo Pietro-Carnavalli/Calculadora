@@ -32,6 +32,20 @@ function apagar() {
     }
 }
 
-function mode () {
-    console.log('foi')
-}
+
+const botao = document.getElementById('toggle');
+
+botao.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    if (document.body.classList.contains('dark-mode')) {
+        botao.innerText = "☀️ Ativar modo claro";
+    } else {
+        botao.innerText = "🌙 Ativar modo escuro";
+    }
+})
+
+
+
+
+

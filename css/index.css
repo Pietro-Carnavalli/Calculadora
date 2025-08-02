@@ -124,3 +124,18 @@ button {
 .footer{
    margin-bottom: 15%;
 }
+
+.dark-mode {
+  background: linear-gradient(to bottom right, #121212, #1e1e1e);
+  color: white;
+}
+
+.dark-mode .calculator,
+.dark-mode .buttons,
+.dark-mode h1 {
+  background: rgb(18, 18, 18);
+}
+
+.dark-mode .footer {
+  background: linear-gradient(to bottom right, #121212, #1e1e1e);
+}
