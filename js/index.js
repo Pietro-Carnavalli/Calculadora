@@ -6,6 +6,7 @@ function inserir(valor) {
     } else {
         display.innerText += valor;
     }
+
 }
 
 function calcular() {
@@ -44,6 +45,50 @@ botao.addEventListener('click', () => {
         botao.innerText = "🌙 Ativar modo escuro";
     }
 })
+
+function calculation(key) {
+    switch (key) {
+        case 'c':
+            limpar()
+            break;
+
+        case 'Backspace':
+            apagar()
+            break;
+
+        case '=':
+        case 'Enter':
+            calcular();
+            break;
+
+        case '*':
+        case '7':
+        case '8':
+        case '9':
+        case '-':
+        case '4':
+        case '5':
+        case '6':
+        case '+':
+        case '1':
+        case '2':
+        case '3':
+        case '0':
+        case '=':
+          inserir(key)
+          break;
+        default:
+            break;
+    }
+}
+
+
+document.addEventListener('keydown', function (event) {
+    console.log('Tecla pressionada:', event.key);
+    calculation(event.key)
+});
+
+
 
 
 
