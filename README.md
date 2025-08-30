@@ -1,9 +1,9 @@
-﻿# Calculadora
+#Calculadora
 
 Uma calculadora web simples e responsiva desenvolvida com HTML, CSS e JavaScript.
 O objetivo do projeto é praticar a lógica de programação, manipulação do DOM e conceitos de front-end.
 
-Tecnologias utilizadas:
+## Tecnologias utilizadas:
 
 HTML5 → estrutura da aplicação;
 
@@ -11,7 +11,7 @@ CSS3 → estilização e layout responsivo;
 
 JavaScript (ES6+) → lógica das operações matemáticas e interatividade.
 
-Funcionalidades:
+## Funcionalidades:
 
 Operações matemáticas básicas: adição, subtração, multiplicação e divisão;
 
@@ -26,7 +26,7 @@ Atualização em tempo real do visor da calculadora.
 
 
 
-Clone o repositório:
+## Clone o repositório:
 
 git clone https://github.com/Pietro-Carnavalli/Calculadora.git
 
@@ -37,12 +37,13 @@ cd Calculadora
 Abra o arquivo index.html no navegador.
 
 
-Melhorias futuras:
+## Melhorias futuras:
 
 Implementar botão de porcentagem e raiz quadrada;
 
 Tratar casos de erro (ex.: divisão por zero);
 
 Melhorar design responsivo para mobile.
+
 
 
